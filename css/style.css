@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+/* image 20 */
+
+/* position: absolute; 
+width: 774px;
+height: 558px;
+left: 960px;
+top: 271px;
+
+background: url(image.png);
+*/
+
+.imgpessoal {
+  width: 100%; /* Isso fará com que a imagem fique com a largura máxima de 100% de seu container */
+  max-width: 200px; /* Isso limitará a imagem a um máximo de 200px de largura */
+  height: auto; /* Isso manterá a proporção da imagem automaticamente */
+}
