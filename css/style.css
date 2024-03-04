@@ -1,18 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
 
-/* image 20 */
+/* Reset básico para manter a consistência entre os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* position: absolute; 
-width: 774px;
-height: 558px;
-left: 960px;
-top: 271px;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #ffffff; /* fundo branco */
+  color: #212121; /* texto cinza escuro */
+}
 
-background: url(image.png);
-*/
+/* ESTILIZAÇÃO DO MENU */
+.menu {
+  background: #212121; /* fundo cinza */
+  color: #ffffff; /* texto branco */
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.menu a,
+.menu button {
+  background: #D9A520; /* fundo amarelo */
+  color: #ffffff; /* texto branco */
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+}
+
+.menu button {
+  background: #D9A520; /* fundo amarelo */
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* ESTILIZAÇÃO DA ABERTURA */
+.abertura {
+  background: #212121; /* fundo cinza escuro */
+  color: #ffffff; /* texto branco */
+  padding: 2rem;
+  text-align: center;
+}
+
+.abertura h1,
+.abertura h2 {
+  margin-bottom: 1rem;
+}
+.abertura h1 {
+  font-size: 60px;
+}
+.abertura h2 {
+  font-size: 25px;
+  color: #D9A520;
+}
+.abertura p {
+  font-size: 20px;
+}
+
+.abertura button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #D9A520; /* botão amarelo */
+  border: none;
+  color: #212121; /* texto cinza escuro */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.abertura button:hover {
+  background-color: #B48B1B; /* amarelo mais escuro para hover */
+}
+
+
+
+/* ESTILIZAÇÃO DA SEÇÃO SOBRE MIM */
+#sobre {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Espaçamento entre o texto e a imagem */
+  padding: 10rem; /* Aumenta o padding para aumentar o tamanho da seção */
+  background-color: #ffffff; /* fundo branco */
+  color: #212121; /* texto cinza escuro */
+}
+
+/* Para o texto na seção sobre */
+#sobre .texto {
+  width: 50%; /* Define a largura do texto para metade da seção */
+  padding-right: 2rem; /* Adiciona espaço entre o texto e a imagem */
+}
+
+/* Para a imagem na seção sobre */
+#sobre .imgpessoal {
+  width: 100%; 
+  display: block;
+  margin-left: 400px; 
+  margin-right: 100px;
+  max-width: 500px; 
+  height: auto;
+  border-radius: 50%; 
+}
+
+.txtapresetancao {
+  flex: 1;
+}
+
+.apresentacao h2 {
+  font: normal, normal, 50px;
+  width: 800px;
+  height: 0px;;
+  margin-bottom: 5rem;
+}
+
+.apresentacao p {
+  width: 800px;
+  margin-bottom: 1rem;
+}
+
+/* Resposta à mudança no layout quando a tela é menor */
+@media (max-width: 768px) {
+  #sobre {
+      flex-direction: column;
+  }
+
+  #sobre .texto,
+  #sobre .imgpessoal {
+      width: 100%; /* Faz o texto e a imagem ocuparem a largura total em telas menores */
+  }
+
+  #sobre .imgpessoal {
+      margin-left: 0; /* Centraliza a imagem em telas menores */
+      margin-top: 2rem; /* Adiciona espaço acima da imagem em telas menores */
+  }
+}
+
 
 .imgpessoal {
-  width: 100%; /* Isso fará com que a imagem fique com a largura máxima de 100% de seu container */
-  max-width: 200px; /* Isso limitará a imagem a um máximo de 200px de largura */
-  height: auto; /* Isso manterá a proporção da imagem automaticamente */
+  display: block;
+  margin: 1rem auto;
+  border-radius: 50%;
+  width: 150px; 
+}
+
+
+
+/* ESTILIZAÇÃO DA SEÇÃO DE PROJETOS */
+#projetos {
+  background-color: #f4f4f4; /* fundo mais claro */
+  padding: 2rem;
+}
+
+.projeto img {
+  width: 100%; 
+  max-width: 200px; 
+  height: auto; 
+}
+
+.projeto button {
+  padding: 0.5rem 1rem;
+  background-color: #D9A520; /* botão amarelo */
+  border: none;
+  color: #ffffff; /* texto branco */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.projeto button:hover {
+  background-color: #B48B1B; /* amarelo mais escuro para hover */
+}
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+footer.final {
+  background-color: #212121; /* fundo cinza escuro */
+  color: #ffffff; /* texto branco */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer.final img {
+  width: 32px; 
+  margin: 0 10px;
+}
+
+footer.final a {
+  color: #ffffff; /* texto branco */
+  transition: color 0.3s ease;
+}
+
+footer.final a:hover {
+  color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu a,
+  .menu button {
+      margin-bottom: 0.5rem;
+  }
 }

@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Pedro Henrique Alves</title>
-    </head>
-    <body>
-        <!-- DIV QUE CRIA O MENU DE OPÇÕES -->
-        <div class="menu" id="div01">
-            <a href="#projetos"> Projetos </a>
-            <a href="#sobre"> Sobre </a>
-            <button>
-                contato
-            </button>
-            <hr>
-        </div>
-
-        <!-- DIV QUE CRIA A JANELA DE ABERTURA DO SITE -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique Alves</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+            <button id="contato">Contato</button>
+        </nav>
         <div class="abertura">
             <h1>Pedro Henrique Alves</h1>
             <h2>Desenvolvedor Back-end</h2>
-            <p>
-            Emprego soluções inteligentes e inovadoras. Especialista em Java e Python comprometido em entregar resultados excepcionais.
-            <button>
-                saiba mais
-            </button>
-            </p>
-            <hr>
+            <p>Emprego soluções inteligentes e inovadoras. <br> Especialista em Java e Python comprometido <br> em entregar resultados excepcionais.</p>
+            <button>Saiba Mais</button>
         </div>
-
-        <!-- DIV QUE CRIA A APRESENTAÇÃO -->
-        <div class="apresentação" id="div02">
-            <a name="sobre"></a>
+    </header>
+    
+    <section id="sobre" class="apresentacao">
+        <div class="txtapresentacao">
             <h2>Quem sou eu?</h2>
-            <p>
-                Brasileiro, 20 anos e apaixonado por tecnologia.
-                Atualmente sou aluno de graduação em Engenharia de Software pela Faculdade de Informática e Administração Paulista (FIAP). Além disso, sou Analista de Business Intelligence na Emex Internet.
-                Meus principais interesses são nas áreas de desenvolvimento de software e soluções para empresas de diferentes ramos, com o uso da programação e análise de dados.
-            </p>
-            <p>
-            <img src="../img/fotopessoal.jpeg" alt="Foto Pessoal" class = imgpessoal>
-            </p>
-            <hr>
+            <p>Brasileiro, 20 anos e apaixonado por tecnologia. </p>
+            <p>Atualmente sou aluno de graduação em Engenharia de Software pela Faculdade de Informática e Administração Paulista (FIAP). Além disso, sou Analista de Business Intelligence na Emex Internet.</p>
+            <p>Meus principais interesses são nas áreas de desenvolvimento de software e soluções para empresas de diferentes ramos, com o uso da programação e análise de dados.</p>
         </div>
-
-        <!-- DIV QUE CRIA APRESENTA OS PROJETOS -->
-        <div class="projetos" id="div03">
-            <a name="projetos"></a>
-            <h2>Projetos</h2>
-            <p>
-                <img src="../images/restaurante1.jpg" alt="Foto de Projeto">
-                <img src="../images/restaurante2.jpg" alt="Foto de Projeto">
-                <img src="../images/restaurante3.jpg" alt="Foto de Projeto">
-            </p>
-            <hr>
+        <img src="../img/fotopessoal.jpeg" alt="Foto Pessoal" class = imgpessoal>
+    </section>
+    
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <!-- Parte para add os Projetos -->
+        <div class="projeto">
+            <img src="/img/xadrez.jpg" alt="Jogo de Xadrez"> <br>
+            <button>Saiba mais</button>
         </div>
-
-        <!-- DIV QUE COLOCA OS ICONES NO FINAL -->
-        <div class="Final" id="div04">
-            <img src="../images/restaurante3.jpg" alt="Icone GitHub">
-            <img src="../images/restaurante3.jpg" alt="Icone Instagram">
-            <img src="../images/restaurante3.jpg" alt="Icone LinkedIn">
+        <div class="projeto">
+            <img src="/img/controleveiculos.png" alt="ERP Controle de Veículos"> <br>
+            <button>Saiba mais</button>
         </div>
-        <hr>
-    </body>
+        <div class="projeto">
+            <img src="/img/db.png" alt="Banco de Dados"> <br>
+            <button>Saiba mais</button>
+        </div>
+    </section>
+    
+    <footer class="final">
+        <!-- Parte para add os Icones das Redes Sociais -->
+        <a href="link-para-github"><img src="caminho-para-icone-github.png" alt="Ícone GitHub"></a>
+        <a href="link-para-instagram"><img src="caminho-para-icone-instagram.png" alt="Ícone Instagram"></a>
+        <a href="link-para-linkedin"><img src="caminho-para-icone-linkedin.png" alt="Ícone LinkedIn"></a>
+    </footer>
+</body>
 </html>
